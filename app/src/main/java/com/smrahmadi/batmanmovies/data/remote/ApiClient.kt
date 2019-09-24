@@ -9,7 +9,7 @@ import retrofit2.converter.gson.GsonConverterFactory
 
 class ApiClient {
     companion object {
-        private var retrofit: Retrofit? = null
+        var retrofit: Retrofit? = null
         private const val BASE_URL = "http://www.omdbapi.com"
 
         private const val cacheSize = (5 * 1024 * 1024).toLong()
