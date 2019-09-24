@@ -13,5 +13,8 @@ data class SearchResponse(
 	val totalResults: String? = null,
 
 	@field:SerializedName("Search")
-	val search: List<SearchItem?>? = null
+	val search: List<SearchItem?>? = null,
+
+	@field:SerializedName("Error")
+	val error: String? = null
 ) : Parcelable

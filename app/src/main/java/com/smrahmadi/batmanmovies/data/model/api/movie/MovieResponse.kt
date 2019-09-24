@@ -79,5 +79,8 @@ data class MovieResponse(
 	val genre: String? = null,
 
 	@field:SerializedName("Writer")
-	val writer: String? = null
+	val writer: String? = null,
+
+	@field:SerializedName("Error")
+	val error: String? = null
 ) : Parcelable
